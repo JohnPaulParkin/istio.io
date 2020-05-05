@@ -352,8 +352,8 @@ running in a second cluster. Before you begin:
       - 240.0.0.2
       endpoints:
       # This is the routable address of the ingress gateway in cluster2 that
-      # sits in front of sleep.foo service. Traffic from the sidecar will be
-      # routed to this address.
+      # sits in front of the httpbin.bar service. Traffic from the sleep.foo
+      # sidecar will be routed to this address.
       - address: ${CLUSTER2_GW_ADDR}
         ports:
           http1: 15443 # Do not change this port value
